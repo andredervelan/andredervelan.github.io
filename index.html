@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #444;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+        }
+
+        h1, h2, h3 {
+            margin: 10px 0;
+        }
+
+        .imagemsupimpa {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px 0;
+        }
+
+        .imagempets {
+            width: 20%;
+            border-radius: 10%;
+            margin: 20px;
+        }
+    
+        ol, ul {
+            text-align: center;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        li {
+            text-align: left;
+        }
+        
+        a.meu-link {
+            color: #1e90ff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        a.meu-link:hover {
+            color: #14610d;
+            text-decoration: underline;
+        }
+        .botaoGrandao {
+            width: 200px;
+            height: 50px;
+            margin-top: 20px;
+            background-color: #1e90ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .botaoGrandao:hover {
+            background-color: #14610d;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background-color: #333;
+            color: #fff;
+        }
+        form {
+            text-align: left;
+            display: inline-block;
+            width: 100%;
+        }
+        external-link {
+            color: blue;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Este é um breve resumo sobre quem eu sou.</h1>
+        <h3>Esse cara da foto aí sou eu :)</h3>
+        <h2>Meu nome é André da Silva Dervelan</h2>
+        <img class="imagemsupimpa" src="Eu.png" alt="Foto de André da Silva Dervelan" />
+        <p>Estou cursando Análise de Sistemas no 2 ano, focando em Python 🐍 e desenvolvimento web. Atualmente, estou em busca de um estágio para ganhar mais experiência na área.</p>
+        <h2>Meus hobbies favoritos são:</h2>
+        <ol>
+            <li>Jogar Cs</li>
+            <li>Escalar montanhas</li>
+            <li>Brincar com ursos</li>
+        </ol>
+        <h3>Meus pets são:</h3>
+        <p>Lucky, L, L </p>
+        <img class="imagempets" src="pets.png" alt="FOTO DE pets" />
+
+        <h3>Contato:</h3>
+        <a href="https://www.linkedin.com/in/andredervelan" 
+           target="_blank" class="meu-link">LinkedIn</a>
+
+        <h3>Quer conversar comigo?</h3>  
+        <form>
+            <label for="name">Me diga seu nome :)</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome">
+            <br>
+            <label for="email">Digite seu email para contato</label>
+            <input type="text" id="email" name="email" placeholder="Seu email">
+            <br>
+            <button type="button" class="botaoGrandao">Clique para enviar</button>
+        </form>
+    </div>
+</body>
+</html>
