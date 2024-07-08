@@ -23,9 +23,13 @@
             max-width: 800px;
             margin: 20px;
             padding: 20px;
-            border: 1px solid #444;
+            border: 1px solid #080808;
             border-radius: 10px;
             background-color: #1e1e1e;
+        }
+        .input{
+            padding: 10px;
+            font-size: 16px;
         }
 
         h1, h2, h3 {
@@ -45,7 +49,25 @@
             border-radius: 10%;
             margin: 20px;
         }
-    
+        .whatsapp-icon {
+            width: 25px;
+            height: 25px;
+            margin: 2px;
+
+        }
+        .linkedin-icon {
+            width: 20px;
+            height: 20px;
+            margin: 1px;
+
+        }
+        .instagram-icon {
+            width: 20px;
+            height: 20px;
+            margin: 1px;
+        }
+
+
         ol, ul {
             text-align: center;
             display: inline-block;
@@ -65,6 +87,22 @@
             color: #14610d;
             text-decoration: underline;
         }
+        .meu-link-insta {
+            color: rgba(233, 3, 3, 0.836);
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .meu-link-insta:hover {
+            color:rgba(241, 9, 137, 0.151);
+            text-decoration: underline;
+            
+        }
+        .telefone {
+            background-color: #1e1e1e;
+            color:white
+        
+        }
+        
         .botaoGrandao {
             width: 200px;
             height: 50px;
@@ -79,8 +117,10 @@
         .botaoGrandao:hover {
             background-color: #14610d;
         }
-        input[type="text"] {
-            width: 80%;
+
+       
+        input {
+            width: 70%;
             padding: 10px;
             margin: 10px 0;
             border-radius: 5px;
@@ -104,37 +144,61 @@
         }
 
     </style>
+    <script>
+        function mostrarPopup() {
+            alert("Mensagem enviada");
+        }
+        function reiniciarPagina() {
+            location.reload();
+        }
+    </script>
+ 
 </head>
 <body>
+
     <div class="container">
         <h1>Este é um breve resumo sobre quem eu sou.</h1>
         <h3>Esse cara da foto aí sou eu :)</h3>
         <h2>Meu nome é André da Silva Dervelan</h2>
         <img class="imagemsupimpa" src="Eu.png" alt="Foto de André da Silva Dervelan" />
-        <p>Estou cursando Análise de Sistemas no 2 ano, focando em Python 🐍 e desenvolvimento web. Atualmente, estou em busca de um estágio para ganhar mais experiência na área.</p>
+        <p>Estou cursando Análise de Sistemas no 2º ano, focando em Python 🐍 e desenvolvimento web. Atualmente, estou em busca de um estágio para ganhar mais experiência na área.</p>
         <h2>Meus hobbies favoritos são:</h2>
-        <ol>
-            <li>Jogar Cs</li>
-            <li>Escalar montanhas</li>
-            <li>Brincar com ursos</li>
-        </ol>
-        <h3>Meus pets são:</h3>
-        <p>Lucky, L, L </p>
+        <ul>
+            <li>Praticar corrida</li>
+            <li>Jogar Futebol</li>
+            <li>Ciclismo</li>
+        </ul>
+
+        <h2>Meus pets são:</h2>
+            <p>Lilly, lucky e Rocky </p>
         <img class="imagempets" src="pets.png" alt="FOTO DE pets" />
 
         <h3>Contato:</h3>
+        <img class="linkedin-icon" src="linkedin2.png"> 
         <a href="https://www.linkedin.com/in/andredervelan" 
-           target="_blank" class="meu-link">LinkedIn</a>
+           target="_blank" class="meu-link">LinkedIn</a> |
+           <img class="instagram-icon" src="instagram.png">
+        <a href="https://www.instagram.com/andredervelan/"
+            target="_blank" class="meu-link-insta">Instagram</a>
 
         <h3>Quer conversar comigo?</h3>  
         <form>
             <label for="name">Me diga seu nome :)</label>
             <input type="text" id="name" name="name" placeholder="Seu nome">
             <br>
-            <label for="email">Digite seu email para contato</label>
+
+            <label for="email">Digite seu email:</label>
             <input type="text" id="email" name="email" placeholder="Seu email">
             <br>
-            <button type="button" class="botaoGrandao">Clique para enviar</button>
+
+            <label for="telefone">Digite seu numero:  </label>
+            <img class="whatsapp-icon" src="icons8-whatsapp-94.png" alt="Icone do whatsapp" />
+            <input type="number"  id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="[0-9]{10}" required><br>
+            
+
+            <button type="button" class="botaoGrandao" onclick="mostrarPopup(); reiniciarPagina();">Clique para enviar</button> 
+            <br>
+    
         </form>
     </div>
 </body>
